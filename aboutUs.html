@@ -8,13 +8,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>About Us</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css1.css">
     </head>
-    <body>
-        <div>
+    
+    <body class="bgDesign">
+        <div class = "header">
             <table border="0">
                 <tr>
                     <td width="50"></td>
-                    <td><img src="images/logo.png" width="70" height="70"></td>
+                    <td><img src="images/logo.png" alt="forumLogo" width="70" height="70"></td>
                     <td width="1200"></td>
                     <td><h3><a href="profile.html">Profile</a></h3></td>
                     <td width="50"></td>
@@ -23,26 +25,22 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             </table>
 
             <hr>
-        </div>
         
-        <div>
             <table border="0">
                 <tr>
                     <td width="50"></td>
-                    <td><h3><a href="adminDashboard.html">Home</a></h3></td>
-                    <!--
+                    <td><h3><a href="homepage.html">Home</a></h3></td>
                     <td width="50"></td>
                     <td><h3><a href="myForum.html">MyForum</a></h3></td>
-                    -->
                     <td width="50"></td>
                     <td><h3><a href="whatsNew.html">What's New</a></h3></td>
                     <td width="50"></td>
                     <td><h3><a href="category.html">Categories</a></h3></td>
                 </tr>
-            </table>
+            </table> 
         </div>
         
-        <hr>
+        
         
         <h1>About Us: </h1>
         Discussion Forum is a forum that was designed with the purpose and importance of information sharing and community building in mind. Our Forum 
@@ -52,7 +50,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         We encourage people from all over the world to discuss on topics and share opinions freely on website. With some regulations, We believe
         that the internet forum can be the best place to make friends and learn new stuff.<br/><br/>
         
-        If you wish to contact us, please visit <a href="contactUs.html">Contact Us</a> page to find out about what way you can reach us. Thank You.
+        If you wish to contact us, please visit <a href="contactUs.html" class ="buttonLink">Contact Us</a> page to find out about what way you can reach us. Thank You.
         
         <br/>
         <br/>
@@ -65,49 +63,89 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <br/>
         <br/>
         <br/>
-        <hr>
         
-        <div>
-            <table border="0" align="left">
-                <tr>
-                    <td width="30"></td>
-                    <td><h3><u>Links</u></h3></td>
-                    <td width="50"></td>
-                    <td><h3><u>About</u></h3></td>
-                    <td width="50"></td>
-                    <td><h3><u>Contact Us</u></h3></td>
-                </tr>
+        
+        <div class ="footer">
+            <div class="row">
+                <div class="column">
+                    <table border="0">
+                        <tr>
+                            <td width="30"></td>
+                            <td><h3><u>Links</u></h3></td>
+                            <td width="50"></td>
+                            <td><h3><u>About</u></h3></td>
+                            <td width="50"></td>
+                            <td><h3><u>Contact Us</u></h3></td>
+                        </tr>
+
+                        <tr>
+                            <td width="10"></td>
+                            <td><a href="#"><h4>Home</h4></a></td>
+                            <td width="10"></td>
+                            <td><a href="aboutUs.html"><h4>About Us</h4></a></td>
+                            <td width="10"></td>
+                            <td><a href="contactUs.html"><h4>Support</h4></a></td>
+                        </tr>
+
+                        <tr>
+                            <td width="10"></td>
+                            <td><a href="#"><h4>My Forum</h4></a></td>
+                            <td width="10"></td>
+                            <td><a href="faq.html"><h4>FAQ</h4></a></td>
+                        </tr>
+
+                        <tr>
+                            <td width="10"></td>
+                            <td><a href="#"><h4>What's New</h4></a></td>
+
+                        </tr>
+
+                        <tr>
+                            <td width="10"></td>
+                            <td><a href="#"><h4>Categories</h4></a></td>
+                        </tr>
+
+                    </table>
+                </div>
                 
-                <tr>
-                    <td width="10"></td>
-                    <td><a href="#"><h4>Home</h4></a></td>
-                    <td width="10"></td>
-                    <td><a href="aboutUs.html"><h4>About Us</h4></a></td>
-                    <td width="10"></td>
-                    <td><a href="contactUs.html"><h4>Support</h4></a></td>
-                </tr>
-                
-                <tr>
-                    <td width="10"></td>
-                    <td><a href="#"><h4>My Forum</h4></a></td>
-                    <td width="10"></td>
-                    <td><a href="faq.html"><h4>FAQ</h4></a></td>
-                </tr>
-                
-                <tr>
-                    <td width="10"></td>
-                    <td><a href="#"><h4>What's New</h4></a></td>
-                   
-                </tr>
-                
-                <tr>
-                    <td width="10"></td>
-                    <td><a href="#"><h4>Categories</h4></a></td>
-                </tr>
-      
-            </table>
+                <div class="column">
+                    <table border="0" align="center"> 
+                        <tr class="newsletter">
+                            <td><h3><u>Subscribe to Our Newsletter</u></h3></td>
+                            
+                            
+                            
+                        </tr>
+                        
+                        <tr class="newsletter">
+                            <td><form action="#">
+                                <div class="input_field">
+                                    <input type="text" name="email" required>
+                                    <span></span>
+                                    <label>Email</label>
+                                </div>
+                                    
+                                <input name="submit" type="submit" value="Subscribe" style="margin-top: -30px;">
+                            </form></td>
+                        </tr>
+                        
+                        <tr>
+                            <td height="15px"></td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <td>Follow Us On Social Media:</td>
+                        </tr>
+                        
+                        <tr> 
+                            <td><img src="images/facebook logo.png" alt="facebook" width="45" height="45">
+                                <img src="images/twitter logo.png" alt="twitter" width="45" height="45">
+                                <img src="images/insta logo.webp" alt="twitter" width="45" height="45"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
-        
-        
     </body>
 </html>

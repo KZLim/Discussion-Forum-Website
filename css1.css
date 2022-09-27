@@ -1,0 +1,159 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Sep 18, 2022, 8:52:59 PM
+    Author     : User
+*/
+
+.bgDesign{
+    background-color: lightgray;
+}
+
+.header{
+    background-color: lightblue;
+    width: 100%;
+    border:1px solid black;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.55), 0 1px 4px rgba(0, 0, 0, 0.24);
+
+}
+
+.footer{   
+    margin-top: 50px;
+    background-color: lightblue;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+
+}
+
+.row {
+  display: flex;
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+.borders{
+    border: 1px solid black;
+    background-color: lightblue;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+table { 
+    border-collapse:collapse;
+}
+
+.buttonLink:link, buttonLink:visited {
+    background-color: orange;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.buttonLink:hover, buttonLink:active {
+    background-color: lime;
+}
+
+.formContainer{
+    border-radius: 25px;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 3px;
+    height: 300px;
+}
+
+form .input_field{
+    position: relative;
+    border-bottom: 2px solid gray;
+    margin: 30px 0;
+}
+
+.input_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.input_field label{
+    position: absolute;
+    top: 5%;
+    left: 5px;
+    color: black;
+    transform: translateY(-50%);
+    font-size: 15px;
+    transition: .3s;
+}
+
+.input_field span::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #4ca1af;
+    transition: .3s;
+}
+
+.input_field input:focus~label, input_field:valid~label{
+    color: #4ca1af;
+}
+
+.input_field input:focus~span::before, input_field:valid~span::before{
+    width: 100%;
+}
+
+input[type=submit]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #4ca1af;
+    border-radius: 55px;
+    font-size: 25px;
+    color: white;
+    font-weight: 300px;
+    cursor: pointer;
+    outline: none;
+    margin: 30px 0 30px 0;
+}
+
+input[type=submit]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+}
+
+@media screen and (max-width: 600px) {
+  .newsletter{
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .mobileItem{
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+

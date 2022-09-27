@@ -8,14 +8,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>Profile</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css1.css">
     </head>
     
-    <body>
-        <div>
+    <body class="bgDesign">
+       <div class = "header">
             <table border="0">
                 <tr>
                     <td width="50"></td>
-                    <td><img src="images/logo.png" width="70" height="70"></td>
+                    <td><img src="images/logo.png" alt="forumLogo" width="70" height="70"></td>
                     <td width="1200"></td>
                     <td><h3><a href="profile.html">Profile</a></h3></td>
                     <td width="50"></td>
@@ -23,10 +24,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 </tr>
             </table>
 
-            <hr>
-        </div>
+           <hr>
         
-        <div>
             <table border="0">
                 <tr>
                     <td width="50"></td>
@@ -38,26 +37,27 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <td width="50"></td>
                     <td><h3><a href="category.html">Categories</a></h3></td>
                 </tr>
-            </table>
-
-            
+            </table> 
         </div>
         
-        <hr>
+        <br/>
+        <br/>
+        <br/>  
         
-        <div align="center">
+        
+        <div align="center" class="formContainer" style="height: 700px">
             
-            <img src="images/profile image.png" alt="profile picture" height="300" width="300" >
+            <br/>
+            <br/>
+            <img src="images/profileIcone.png" alt="profile picture" height="300" width="300" >
             <h3>Username: David Lew</h3>
             <h3>Bio: Hi, My Name is David, I am a technology enthusiast</h3>
             
             <form action="#" align="center">
-
-                    <input name="edit_profile" type="submit" value="Edit Profile">
-                    <br/>
-                    <br/>
-                    <input name="account_setting" type="submit" value="Account Settings">
-
+                <input name="edit_profile" type="submit" value="Edit Profile" style="margin-top: 100px">
+                <br/>
+                <br/>
+                <input name="account_setting" type="submit" value="Account Settings" style="margin-top: -20px;">
              </form>
         </div>
         
@@ -67,48 +67,90 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <br/>
         <br/>
         
-        <hr>
+        
         
         <!--Footer Section-->
-        <div>
-            <table border="0" align="left">
-                <tr>
-                    <td width="30"></td>
-                    <td><h3><u>Links</u></h3></td>
-                    <td width="50"></td>
-                    <td><h3><u>About</u></h3></td>
-                    <td width="50"></td>
-                    <td><h3><u>Contact Us</u></h3></td>
-                </tr>
+        <div class ="footer">
+            <div class="row">
+                <div class="column">
+                    <table border="0">
+                        <tr>
+                            <td width="30"></td>
+                            <td><h3><u>Links</u></h3></td>
+                            <td width="50"></td>
+                            <td><h3><u>About</u></h3></td>
+                            <td width="50"></td>
+                            <td><h3><u>Contact Us</u></h3></td>
+                        </tr>
+
+                        <tr>
+                            <td width="10"></td>
+                            <td><a href="#"><h4>Home</h4></a></td>
+                            <td width="10"></td>
+                            <td><a href="aboutUs.html"><h4>About Us</h4></a></td>
+                            <td width="10"></td>
+                            <td><a href="contactUs.html"><h4>Support</h4></a></td>
+                        </tr>
+
+                        <tr>
+                            <td width="10"></td>
+                            <td><a href="#"><h4>My Forum</h4></a></td>
+                            <td width="10"></td>
+                            <td><a href="faq.html"><h4>FAQ</h4></a></td>
+                        </tr>
+
+                        <tr>
+                            <td width="10"></td>
+                            <td><a href="#"><h4>What's New</h4></a></td>
+
+                        </tr>
+
+                        <tr>
+                            <td width="10"></td>
+                            <td><a href="#"><h4>Categories</h4></a></td>
+                        </tr>
+
+                    </table>
+                </div>
                 
-                <tr>
-                    <td width="10"></td>
-                    <td><a href="#"><h4>Home</h4></a></td>
-                    <td width="10"></td>
-                    <td><a href="aboutUs.html"><h4>About Us</h4></a></td>
-                    <td width="10"></td>
-                    <td><a href="contactUs.html"><h4>Support</h4></a></td>
-                </tr>
-                
-                <tr>
-                    <td width="10"></td>
-                    <td><a href="#"><h4>My Forum</h4></a></td>
-                    <td width="10"></td>
-                    <td><a href="faq.html"><h4>FAQ</h4></a></td>
-                </tr>
-                
-                <tr>
-                    <td width="10"></td>
-                    <td><a href="#"><h4>What's New</h4></a></td>
-                   
-                </tr>
-                
-                <tr>
-                    <td width="10"></td>
-                    <td><a href="#"><h4>Categories</h4></a></td>
-                </tr>
-      
-            </table>
+                <div class="column">
+                    <table border="0" align="center"> 
+                        <tr class="newsletter">
+                            <td><h3><u>Subscribe to Our Newsletter</u></h3></td>
+                            
+                            
+                            
+                        </tr>
+                        
+                        <tr class="newsletter">
+                            <td><form action="#">
+                                <div class="input_field">
+                                    <input type="text" name="email" required>
+                                    <span></span>
+                                    <label>Email</label>
+                                </div>
+                                    
+                                <input name="submit" type="submit" value="Subscribe" style="margin-top: -30px;">
+                            </form></td>
+                        </tr>
+                        
+                        <tr>
+                            <td height="15px"></td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <td>Follow Us On Social Media:</td>
+                        </tr>
+                        
+                        <tr> 
+                            <td><img src="images/facebook logo.png" alt="facebook" width="45" height="45">
+                                <img src="images/twitter logo.png" alt="twitter" width="45" height="45">
+                                <img src="images/insta logo.webp" alt="twitter" width="45" height="45"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </body>
 </html>

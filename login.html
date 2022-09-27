@@ -8,9 +8,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="login.css">
     </head>
     
-    <body>
+    <body style="background-color: lightblue">
         <div>
             
             <br/>
@@ -27,23 +28,32 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <br/>
             <br/>
             
-            <div>
-                <form action="#" align="center">
+            <div class="center">
+                <form action="#">
 
                     <h1>Login</h1>
-                    Username: <br/>
-                    <input name="userName" type="text" required>
-                    <br/>
-                    <br/>
-                    Password: <br/>
-                    <input name="password" type="password" required >
-                    <br/>
-                    <br/>
+                    
+                    <div class="input_field">
+                        <input name="userName" type="text" required>
+                        <span></span>
+                        <label>Username</label>
+                    </div>
+                    
+                    <div class="input_field">
+                        <input name="password" type="password" required >
+                        <span></span>
+                        <label>Password</label>
+                    </div>
+                    
+                   
                     <input name="signin" type="submit" value="Login">
+                    
+                    <a href="forgotPassword.html">Forgot Password</a>
                     <h4>Do not have an account? <a href="register.html">Register Now</a></h4>
 
                 </form>
             </div>
+            
         </div>
     </body>
 </html>

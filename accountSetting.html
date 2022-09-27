@@ -8,13 +8,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>Account Setting</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css1.css">
     </head>
-    <body>
-        <div>
+    
+    <body class = "bgDesign">
+        <div class = "header">
             <table border="0">
                 <tr>
                     <td width="50"></td>
-                    <td><img src="images/logo.png" width="70" height="70"></td>
+                    <td><img src="images/logo.png" alt="forumLogo" width="70" height="70"></td>
                     <td width="1200"></td>
                     <td><h3><a href="profile.html">Profile</a></h3></td>
                     <td width="50"></td>
@@ -23,9 +25,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             </table>
 
             <hr>
-        </div>
         
-        <div>
             <table border="0">
                 <tr>
                     <td width="50"></td>
@@ -37,105 +37,236 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <td width="50"></td>
                     <td><h3><a href="category.html">Categories</a></h3></td>
                 </tr>
-            </table>
+            </table> 
+        </div>
+        
+        <h1 align="center">Account Settings</h1>
+       
+        <!-- It is using the newsletter class from the css-->
+        <div class="newsletter">
+            <div class="row">
+                <div class="column">
+                    <div class = "formContainer" style="height: 410px">
 
-            
+                        <h2>Change Password</h2>
+
+                        <form action="#">
+
+                            <div class="input_field">
+                                <input type="text" name="currentPassword" required>
+                                <span></span>
+                                <label>Current Password</label>
+                            </div>
+
+                            <div class="input_field">
+                                <input type="text" name="newPassword" required>
+                                <span></span>
+                                <label>New Password</label>
+                            </div>
+
+                            <div class="input_field">
+                                <input type="text" name="confirmNewPassword" required>
+                                <span></span>
+                                <label>Confirm New Password</label>
+                            </div>
+
+
+                            <input name="changePassword" type="submit" value="Change Password">
+                        </form> 
+                    </div>
+                </div>
+
+                <br/>
+                <br/>
+                <hr>
+                <br/>
+                <br/>
+
+
+                <div class ="column">
+                    <div class = "formContainer" style="height: 330px">
+                        <form action="#">
+
+                            <h2>Change Email</h2>
+
+                            <div class="input_field">             
+                                <input type="text" name="newEmail" required>
+                                <span></span>
+                                <label>New Email</label>
+                            </div>        
+
+                            <div class="input_field">
+                                <input type="text" name="password" required>
+                                <span></span>
+                                <label>Password</label>
+                            </div>        
+
+                            <input name="changeEmail" type="submit" value="Change Email">
+                        </form> 
+
+                    </div>
+                </div>
+            </div>
         </div>
         
-        <hr>
         
-        <div>
-            
-            <h1 align="center">Account Settings</h1>
-            
-            <h2>Change Password</h2>
-            
-            <form action="#">
-            
-            
-                Current Password: <br/>
-                <input type="text" name="currentPassword" required><br/><br/>
-                
-                New Password:<br/>
-                <input type="text" name="newPassword" required><br/><br/>
-            
-                Confirm New Password:<br/>
-                <input type="text" name="confirmNewPassword" required><br/><br/>
-           
-            
-                <input name="changePassword" type="submit" value="Change Password">
-            </form> 
-            
-            <br/>
-            <br/>
-            <hr>
-            
-            
-            <form action="#">
-            
-                <h2>Change Email</h2>
-            
-                New Email: <br/>
-                <input type="text" name="newEmail" required><br/><br/>
-                
-                Password: <br/>
-                <input type="text" name="password" required><br/><br/>
-      
-            
-                <input name="changeEmail" type="submit" value="Change Email">
-            </form> 
-            
+        <!--This part of code is for the mobile view only-->
+        <div class="mobileItem">
+            <div>
+                <div>
+                    <div class = "formContainer" style="height: 410px">
+
+                        <h2>Change Password</h2>
+
+                        <form action="#">
+
+                            <div class="input_field">
+                                <input type="text" name="currentPassword" required>
+                                <span></span>
+                                <label>Current Password</label>
+                            </div>
+
+                            <div class="input_field">
+                                <input type="text" name="newPassword" required>
+                                <span></span>
+                                <label>New Password</label>
+                            </div>
+
+                            <div class="input_field">
+                                <input type="text" name="confirmNewPassword" required>
+                                <span></span>
+                                <label>Confirm New Password</label>
+                            </div>
+
+
+                            <input name="changePassword" type="submit" value="Change Password">
+                        </form> 
+                    </div>
+                </div>
+
+                <br/>
+                <br/>
+                <hr>
+                <br/>
+                <br/>
+
+
+                <div class>
+                    <div class = "formContainer" style="height: 330px">
+                        <form action="#">
+
+                            <h2>Change Email</h2>
+
+                            <div class="input_field">             
+                                <input type="text" name="newEmail" required>
+                                <span></span>
+                                <label>New Email</label>
+                            </div>        
+
+                            <div class="input_field">
+                                <input type="text" name="password" required>
+                                <span></span>
+                                <label>Password</label>
+                            </div>        
+
+                            <input name="changeEmail" type="submit" value="Change Email">
+                        </form> 
+
+                    </div>
+                </div>
+            </div>
         </div>
         
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <hr>
         
-        <div>
-            <table border="0" align="left">
-                <tr>
-                    <td width="30"></td>
-                    <td><h3><u>Links</u></h3></td>
-                    <td width="50"></td>
-                    <td><h3><u>About</u></h3></td>
-                    <td width="50"></td>
-                    <td><h3><u>Contact Us</u></h3></td>
-                </tr>
+        <div class ="footer">
+            <div class="row">
+                <div class="column">
+                    <table border="0">
+                        <tr>
+                            <td width="30"></td>
+                            <td><h3><u>Links</u></h3></td>
+                            <td width="50"></td>
+                            <td><h3><u>About</u></h3></td>
+                            <td width="50"></td>
+                            <td><h3><u>Contact Us</u></h3></td>
+                        </tr>
+
+                        <tr>
+                            <td width="10"></td>
+                            <td><a href="#"><h4>Home</h4></a></td>
+                            <td width="10"></td>
+                            <td><a href="aboutUs.html"><h4>About Us</h4></a></td>
+                            <td width="10"></td>
+                            <td><a href="contactUs.html"><h4>Support</h4></a></td>
+                        </tr>
+
+                        <tr>
+                            <td width="10"></td>
+                            <td><a href="#"><h4>My Forum</h4></a></td>
+                            <td width="10"></td>
+                            <td><a href="faq.html"><h4>FAQ</h4></a></td>
+                        </tr>
+
+                        <tr>
+                            <td width="10"></td>
+                            <td><a href="#"><h4>What's New</h4></a></td>
+
+                        </tr>
+
+                        <tr>
+                            <td width="10"></td>
+                            <td><a href="#"><h4>Categories</h4></a></td>
+                        </tr>
+
+                    </table>
+                </div>
                 
-                <tr>
-                    <td width="10"></td>
-                    <td><a href="#"><h4>Home</h4></a></td>
-                    <td width="10"></td>
-                    <td><a href="aboutUs.html"><h4>About Us</h4></a></td>
-                    <td width="10"></td>
-                    <td><a href="contactUs.html"><h4>Support</h4></a></td>
-                </tr>
-                
-                <tr>
-                    <td width="10"></td>
-                    <td><a href="#"><h4>My Forum</h4></a></td>
-                    <td width="10"></td>
-                    <td><a href="faq.html"><h4>FAQ</h4></a></td>
-                </tr>
-                
-                <tr>
-                    <td width="10"></td>
-                    <td><a href="#"><h4>What's New</h4></a></td>
-                   
-                </tr>
-                
-                <tr>
-                    <td width="10"></td>
-                    <td><a href="#"><h4>Categories</h4></a></td>
-                </tr>
-      
-            </table>
+                <div class="column">
+                    <table border="0" align="center"> 
+                        <tr class="newsletter">
+                            <td><h3><u>Subscribe to Our Newsletter</u></h3></td>
+                            
+                            
+                            
+                        </tr>
+                        
+                        <tr class="newsletter">
+                            <td><form action="#">
+                                <div class="input_field">
+                                    <input type="text" name="email" required>
+                                    <span></span>
+                                    <label>Email</label>
+                                </div>
+                                    
+                                <input name="submit" type="submit" value="Subscribe" style="margin-top: -30px;">
+                            </form></td>
+                        </tr>
+                        
+                        <tr>
+                            <td height="15px"></td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <td>Follow Us On Social Media:</td>
+                        </tr>
+                        
+                        <tr> 
+                            <td><img src="images/facebook logo.png" alt="facebook" width="45" height="45">
+                                <img src="images/twitter logo.png" alt="twitter" width="45" height="45">
+                                <img src="images/insta logo.webp" alt="twitter" width="45" height="45"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </body>
 </html>
