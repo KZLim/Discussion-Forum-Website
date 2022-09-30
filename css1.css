@@ -160,29 +160,55 @@ input[type=submit]:hover{
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: white;
-  padding: 10px;
-  border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
 }
 
 .grid-item {
-  background-color: #CCCCFF; 
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+    background-color: #CCCCFF; 
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .grid-container-mobile {
-  display: grid;
-  grid-template-columns: auto;
-  background-color: white;
-  padding: 10px;
-  border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
 }
 
-a:link { text-decoration: none; }
+a:link { 
+    text-decoration: none;
+}
+
+.forumContainer{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    background-color: white;
+    width: auto;
+    height: 150px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.55), 0 1px 4px rgba(0, 0, 0, 0.24);
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.forumContainer-mobile{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    background-color: white;
+    width: auto;
+    height: 150px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.55), 0 1px 4px rgba(0, 0, 0, 0.24);
+    border: 1px solid black;
+    border-radius: 15px;
+}
 
 
