@@ -8,23 +8,25 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 */
 
 .bgDesign{
-    background-color: lightgray;
+    background-color: #F0F0F0;
 }
 
 .header{
-    background-color: lightblue;
+    background-color: #CCCCFF;	
     width: 100%;
     border:1px solid black;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.55), 0 1px 4px rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
 
 }
 
 .footer{   
     margin-top: 50px;
-    background-color: lightblue;
+    background-color: #CCCCFF;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
 
 }
 
@@ -42,6 +44,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 .borders{
     border: 1px solid black;
     background-color: lightblue;
+    border-radius: 15px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
@@ -62,7 +65,7 @@ table {
 }
 
 .formContainer{
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: white;
     padding-top: 10px;
     padding-left: 10px;
@@ -119,7 +122,7 @@ input[type=submit]{
     width: 100%;
     height: 50px;
     border: 1px solid;
-    background: #4ca1af;
+    background: navy;
     border-radius: 55px;
     font-size: 25px;
     color: white;
@@ -155,5 +158,31 @@ input[type=submit]:hover{
     display: none;
   }
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.grid-item {
+  background-color: #CCCCFF; 
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-container-mobile {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+a:link { text-decoration: none; }
 
 
