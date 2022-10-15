@@ -33,7 +33,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <td width="50"></td>
                     <td><h3><a href="myForum.html">MyForum</a></h3></td>
                     <td width="50"></td>
-                    <td><h3><a href="whatsNew.html">Discover</a></h3></td>
+                    <td><h3><a href="discover.html">Discover</a></h3></td>
                     <td width="50"></td>
                     <td><h3><a href="category.html">Categories</a></h3></td>
                 </tr>
@@ -45,30 +45,58 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <br/>
         
         
+        <div class="newsletter">
+            <div class ="formContainer" style="height: 650px">
+                <h1>Action Performing: Forum Deletion</h1>
+
+                <form action="#">
+
+                    <div class="input_field">
+                        <input type="text" name="forumID" required>
+                        <span></span>
+                        <label>Forum ID</label>
+                    </div>
+
+                    <div class="input_field">
+                        <input type="text" name="violation" required>
+                        <span></span>
+                        <label>Violation</label>
+                    </div>
+
+                    Reasons <br/>
+                    <textarea rows="10" cols="40"></textarea><br/><br/>
+
+                    <input name="deleteForum" type="submit" value="Delete Forum">
+
+                </form>
+            </div>
+        </div>
         
-        <div class ="formContainer" style="height: 550px">
-            <h1>Action Performing: Forum Deletion</h1>
-            
-            <form action="#">
-                
-                <div class="input_field">
-                    <input type="text" name="forumID" required>
-                    <span></span>
-                    <label>Forum ID</label>
-                </div>
-                
-                <div class="input_field">
-                    <input type="text" name="violation" required>
-                    <span></span>
-                    <label>Violation</label>
-                </div>
-                
-                Reasons <br/>
-                <textarea rows="10" cols="40"></textarea><br/><br/>
+        <div class="mobileItem">
+            <div class ="formContainer" style="height: 650px">
+                <h1>Action Performing: Forum Deletion</h1>
 
-                <input name="deleteForum" type="submit" value="Delete Forum">
+                <form action="#">
 
-            </form>
+                    <div class="input_field">
+                        <input type="text" name="forumID" required>
+                        <span></span>
+                        <label>Forum ID</label>
+                    </div>
+
+                    <div class="input_field">
+                        <input type="text" name="violation" required>
+                        <span></span>
+                        <label>Violation</label>
+                    </div>
+
+                    Reasons <br/>
+                    <textarea rows="10" cols="40"></textarea><br/><br/>
+
+                    <input name="deleteForum" type="submit" value="Delete Forum" style="margin-top: -10px;">
+
+                </form>
+            </div>
         </div>
         
         <br/>
