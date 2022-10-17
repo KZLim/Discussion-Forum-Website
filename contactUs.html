@@ -50,20 +50,33 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             
             <h1 align="center">Contact Us</h1>
             
-            <table border="2" align="center">
-                
-                <tr>
-                    <td><h3>We can be reached through the email address provided. When sending a email
-                            please include the following:
-                            <br/>1) Your Name (for pronunciation purpose)
-                            <br/>2) Your Username
-                            <br/>3) The issues you have encountered along with screenshots if possible.</h3></td>
-                </tr>
-                <tr>                    
-                    <td><h3>Email: support.forum@forum.com</h3></td>
-                </tr>
+            <div class="formContainer">
+                <form action="#" style="margin: 10px;">
+                    
+                    <div class="input_field">
+                        <input type="text" name="email" required>
+                        <span></span>
+                        <label>Email:</label>
+                    </div>
+                   
+                    <div class="input_field">
+                        <input type="text" name="issueTitle" required>
+                        <span></span>
+                        <label>Issue:</label>
+                    </div>
+                    
+                    <div>
+                        Additional Messages: <br/>
+                        <textarea id="issueMessage" rows="7" cols="50"></textarea>
+                    </div>
+                    
+                    <input name="contactUsSubmit" type="submit" value="Submit">
+                    
+                    <p>Note: Please understand the high volume of request submitted as our admin team are doing their best to get
+                   back to each help request. Thank You.</p>
 
-            </table>
+                </form>
+            </div>
         </div>
         
         <br/>
