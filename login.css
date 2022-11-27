@@ -15,6 +15,10 @@ body{
     overflow: hidden;
 }
 
+.header{
+    margin-left: 15px;
+}
+
 .center{
     position: absolute;
     top:50%;

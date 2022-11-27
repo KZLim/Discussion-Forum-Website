@@ -1,0 +1,70 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Nov 4, 2022, 3:59:15 PM
+    Author     : User
+*/
+
+.header {
+  overflow: hidden;
+  background-color: #CCCCFF;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: #0d6efd;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #CCCCFF;
+  color: blueviolet;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-left{
+    float: left;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+  
+  .header-left{
+    float: none;
+    margin-left: 0px;
+    margin-top: 0px;
+    }
+}
+
